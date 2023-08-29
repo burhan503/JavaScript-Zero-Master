@@ -1,0 +1,5 @@
+Q : what the diffrence between state and props ?
+A : if we talk about state, it is use to control the components, the variable data can be store in the state.
+State is mutable means state can be change values anytime.
+
+props : props is use to pass the data to diffrenct components. it is immutable means props cannot be change the value.

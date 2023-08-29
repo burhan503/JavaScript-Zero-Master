@@ -1,0 +1,13 @@
+`
+Q : What is the ‘Strict Mode in JavaScript, and how can it be enabled ?
+A : Strict is a new feature of ECMAScript 5.
+    The statement "use strict" instructs the browser to use the Strict Mode, which is a reduced and sefer feature set of javascript.  
+    Strict Mode adds certain compulsions to JavaScript. Under the strict Mode, JavaScript shows errors for a piece of code, which did not show an error before, but might be problematic and potentially unsafe. Strict Mode also solves some mistakes that hamper the JavaScript engines from working efficiently.
+    Strict mode can be enabled by adding the string literal “use strict” above the file.
+     This can be illustrated by the given example:
+   
+    function myfunction() {
+    "use strict;"
+    var v = "This is a strict mode function";
+    }
+`;

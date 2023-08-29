@@ -1,0 +1,12 @@
+`
+Q : What are the important properties of an anonymous function in JavaScript?
+A : A function that is declared without any named identifier is known as an anonymous function. In general,
+ an anonymous function is inaccessible after its declaration.
+
+Anonymous function declaration –
+
+var anon = function() {
+    alert('I am anonymous');
+};
+anon();
+`;

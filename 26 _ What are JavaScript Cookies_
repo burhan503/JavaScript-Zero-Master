@@ -1,0 +1,8 @@
+Q : What are JavaScript Cookies?
+A : Cookies are the small test files stored in a computer, and they get created when the user visits the websites to store information that they need. Examples could be User Name details and shopping cart information from previous visits.
+
+A cookie is a piece of data that is stored on your computer to be accessed by your browser. You also might have enjoyed the benefits of cookies knowingly or unknowingly. Have you ever saved your Facebook password so that you do not have to type it each and every time you try to login? If yes, then you are using cookies. Cookies are saved as key/value pairs
+
+You can create cookies using document. cookie property like this.
+
+document.cookie = "cookiename=cookievalue"

@@ -1,0 +1,11 @@
+`
+Q : What a pop()method in JavaScript is ?
+A : The Pop mathod is a javascript inbuilt mathod which is work for
+ removing last element from the given array.
+
+Example:
+
+var names = ["A", "B", "C"];
+names.pop();
+//Now names becomes A,B
+`;

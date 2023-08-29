@@ -1,0 +1,29 @@
+Q : What is the working of timers in JavaScript ?
+Answer :
+
+A timer is used to execute some task after a particular time interval.
+Basically, with the help of a timer in JavaScript, we can delay the code execution.
+With the help of the timer function in JavaScript,
+we can achieve asynchronous functionality also.
+
+Suppose we are delaying the execution of some function with the help of timer function,
+then that function will not get executed when the JavaScript engine will encounter it.
+It would be stored somewhere else and when the timer expired then that function would be executed.
+
+setTimeout(()=>{
+console.log("Exucute it later..")
+},1000)
+console.log("Execute in first...")
+
+output
+
+Execute in first...
+Exucute it later..
+
+
+SetIntervel : The setInterval() method calls a function at specified intervals.
+
+The setInterval() method continues calling the function until clearInterval() is called, or the window is closed.
+
+The setInterval() function is commonly used to set a delay for functions that are executed again and again, such as animations.
+we can cancel the interval using clearInterval().

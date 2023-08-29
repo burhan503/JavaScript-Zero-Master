@@ -1,0 +1,10 @@
+Q : What is the difference between ViewState and SessionState ?
+A :
+ViewState : ViewState is specific to a page in a session.
+
+ViewState It is maintained at only one level that is page-level. Changes made on a single page is not visible on other pages.
+Information that is gathered in view state is stored for the clients only and cannot be transferred to any other place.
+
+SessionState : SessionState is specific to user-specific data that can be accessed across all web application pages.
+
+SessionState has the tendency for the persistence of user-specific data and is maintained on the server-side. This data remains available until the time that the session is completed or the browser is closed by the user. The session state is only valid for type objects

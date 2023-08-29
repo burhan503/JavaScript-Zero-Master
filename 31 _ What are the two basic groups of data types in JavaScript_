@@ -1,0 +1,6 @@
+Q : What are the two basic groups of data types in JavaScript?
+A : They are as—
+Primitive types
+Reference types
+Primitive types are number and Boolean data types.
+Reference types are more complex types like strings and dates.

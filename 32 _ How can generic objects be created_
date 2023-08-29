@@ -1,0 +1,4 @@
+Q : How can generic objects be created?
+A : Generic objects can be created as:
+
+var I = new object();

@@ -1,0 +1,5 @@
+Q : What is the use of the Push method in JavaScript ?
+A : The push method is used to add or append one or more elements to an Array end. 
+Using this method, we can append multiple elements by passing multiple arguments.
+
+JavaScript Unshift() method is very much similar to the push() method but the difference is that the unshift() method adds the elements in the very beginning of array whereas the push() method adds at the end of the array.

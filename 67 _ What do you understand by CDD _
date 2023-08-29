@@ -1,0 +1,11 @@
+Q : What do you undestand by CDD ?
+A : CDD stand for Component driven development.CDD is development mathdelogy that is supoort the build proccess.
+
+it is a proccess that build UI from the "Bottom up" by starting at the level of components and ending at the level of pages or screens.
+
+benifits of using CDD is
+
+: focus on developments
+: Increase UI coverage
+: Build a component library
+: parallelize developments.

@@ -1,0 +1,8 @@
+Q : What are the disadvantages of using innerHTML in JavaScript?
+A : If you use innerHTML in JavaScript, the disadvantage is
+
+Content is replaced everywhere
+We cannot use it like “appending to innerHTML
+Even if you use += like “innerHTML = innerHTML + ‘html'” still the old content is replaced by html
+The entire innerHTML content is re-parsed and builds into elements. Therefore, it’s much slower
+The innerHTML does not provide validation, and therefore we can potentially insert valid and broken HTML in the document and break it

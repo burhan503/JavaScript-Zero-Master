@@ -1,0 +1,12 @@
+Q : Which keywords are used to handle exceptions in JavaScript ?
+A : Try… Catch—finally is used to handle exceptions in the JavaScript
+
+Try{
+    Code
+}
+Catch(exp){
+    Code to throw an exception.
+}
+Finally{
+    Code runs either it finishes successfully or after catch
+}

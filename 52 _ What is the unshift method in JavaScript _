@@ -1,0 +1,14 @@
+`
+Q : What is the unshift method in JavaScript ?
+A : Unshift method is like the push method, which works at the beginning of the array. This method is used to prepend one or more elements to the beginning of the array.
+
+The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.
+
+const array1 = [1, 2, 3];
+
+console.log(array1.unshift(4, 5));
+// expected output: 5
+
+console.log(array1);
+// expected output:
+`;

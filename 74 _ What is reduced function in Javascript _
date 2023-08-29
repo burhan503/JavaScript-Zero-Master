@@ -1,0 +1,128 @@
+Q : What is reduced function in javascript ?
+A : 
+Reduced mathod is use for calculation with array and come out with single value.
+
+Reduced function is basically used that a place where you have to take 
+all the elements in array and come up with a single value out of them.
+
+witout reduce find total
+sum=0;
+for(let i=0;i<arr.length;i++){
+ sum = arr[i]+sum
+}
+console.log(sum)
+
+
+example of reduced :
+accumelator,current
+find total from reduced function
+
+const arr =[4,3]
+
+const output = arr.reduce((accumelator,current)=>{
+console.log(acc,current)
+accumelator = accumelator+current
+return acaccumelator
+})
+console.log(output)
+
+
+Find max value without reduce
+
+const arr =[5,3,25,5]
+
+let max=0
+for(let i=0;i<arr.length;i++){
+if(arr[i]>max)
+ max=arr[i]
+}
+
+console.log(max)
+
+
+
+with reduce
+
+const arr =[,940,2211,111,111,700]
+
+const output = arr.reduce((acc,current)=>{
+    if(current>acc)    acc=current
+        return acc
+},0)
+
+console.log(output)
+
+
+another example of reduce mathod :
+find the age number of employees
+
+const arr =[
+{age:12,name:'a',fullName:'akshay',},
+{age:32,name:'b',fullName:'Bala',},
+{age:2,name:'c',fullName:'chaman',},
+{age:22,name:'d',fullName:'Danish',},
+{age:12,name:'e',fullName:'Emran',},
+{age:32,name:'f',fullName:'Farook',},
+]
+
+/* what we need to do.... here is... */
+/* {12:2, 32:2,2:1,22:1,}       */
+
+const output = arr.reduce((acc,current)=>{
+  if(acc[current.age]){
+   acc[current.age]=++acc[current.age]
+  }
+  else{
+  acc[current.age]=1
+  }
+  return acc
+},{})
+ {} this mean we have put empty obj for accumelator
+
+console.log(output)
+
+
+Example for finidng first name only
+
+const arr =[
+{age:12,name:'a',fullName:'akshay',},
+{age:32,name:'b',fullName:'Bala',},
+{age:2,name:'c',fullName:'chaman',},
+{age:22,name:'d',fullName:'Danish',},
+{age:12,name:'e',fullName:'Emran',},
+{age:32,name:'f',fullName:'Farook',},
+]
+
+/* what we need to do.... here is... */
+/* [{age : 12,name:'e'},{age:12,name:'a'},{age:2,name:'a'}       */
+
+const output = arr.filter(item=> item.age<20).map(ite=>ite.name)
+console.log(output)
+
+
+Same think we can do with reduce
+
+const arr =[
+{age:12,name:'a',fullName:'akshay',},
+{age:32,name:'b',fullName:'Bala',},
+{age:2,name:'c',fullName:'chaman',},
+{age:22,name:'d',fullName:'Danish',},
+{age:12,name:'e',fullName:'Emran',},
+{age:32,name:'f',fullName:'Farook',},
+]
+
+/* what we need to do.... here is... sane with reduce */
+/* [{age : 12,name:'e'},{age:12,name:'a'},{age:2,name:'a'}       */
+
+const ouptut = arr.reduce((acc,current)=>{
+if(current.age<20){
+acc.push(current.name)
+}
+return acc
+},[])
+
+
+console.log(ouptut)
+["a", "c", "e"]
+
+

@@ -1,0 +1,22 @@
+Q : Explain map,forEach,and filter ?
+A : Map: this mathod is create new array by performing on each given array elements. map is return the new array after complete the operation.
+
+    forEach : this mathod perform operation on each elements of the given array, this does not return the any value or array. 
+
+    filter : this mahtod perform operation on array and return new array after given filter like 4> value ? this will only return value >4.
+
+    
+    const arr =[
+{age:12,name:'a',fullName:'akshay',},
+{age:32,name:'b',fullName:'Bala',},
+{age:2,name:'c',fullName:'chaman',},
+{age:22,name:'d',fullName:'Danish',},
+{age:12,name:'e',fullName:'Emran',},
+{age:32,name:'f',fullName:'Farook',},
+]
+
+/* what we need to do.... here is... */
+/* [{age : 12,name:'e'},{age:12,name:'a'},{age:2,name:'a'}       */
+
+const output = arr.filter(item=> item.age<20).map(ite=>ite.name)
+console.log(output)

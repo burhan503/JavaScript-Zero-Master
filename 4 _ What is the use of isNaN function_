@@ -1,0 +1,15 @@
+Q : What is the use of isNaN function?
+A :
+
+The isNaN() function is used to check whether a given value is an illegal number or not. It returns true if value is a NaN else returns false. It is different from the Number.isNaN() Method.
+
+if there is a illiegal number then it will be return true
+if there is a number then it will be return false.
+
+
+isNan function returns true if the argument is not a number; otherwise, it is false.
+
+isNaN(12) false // fasle because this is positive number
+isNaN(12.3) false// fasle because this is positive number
+isNaN(0/0) true // true  because this is not positive number.
+isNaN("Helo testing") true //true because this is not positive number this is string.

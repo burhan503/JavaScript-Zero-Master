@@ -1,0 +1,337 @@
+`
+YouTubeVideoLink : https://www.youtube.com/watch?v=luahqiGD59o&list=PL98MbIu3NiM0bGMEbWRMblYip9s1HFFOp
+
+
+Link : https://youtu.be/zdp0zrpKzIE
+
+By default data type of javascript is undefined.
+
+Array Methods:  
+1: Length of the array->
+
+Const arr=[3,2,3,2,3,2,34,23]
+console.log(arr.length)
+
+REMOVE ELEMENT FROM FIRST
+
+2: shift() array element from first
+var arr =[32,21,3,5,3]
+console.log(arr.shift())
+console.log(arr) // [21,3,5,3]
+
+ADD ELEMENT TO FIRST
+2 : unshift() add array element to first
+Var arr =[12,55,45,2]
+Var uns =arr.unshift(11)
+log(arr) // now its change
+
+3 : pop() remove from the last one element
+ var a =[23,364,45,345]
+console.log(a.pop())
+console.log(a)
+
+Var i=[32,21,3,5,3]
+4 :  log(i.push(70))
+log(i)
+
+5 : log(indexOf(30))
+
+6 : log(lastIndexOf((30))
+
+7 : log(i.includes(32)) true
+    log(i.includes(92)) false
+
+8 : SPLIT ==>
+  let arr = "5,515,2,4,9,515"
+  console.log(arr.split(','))  OUTPUT ["5", "515", "2", "4", "9", "515"]
+
+9 :=> JOIN
+   let arr = [5,515,2,4,9,515]
+   console.log(arr.join(','))  OUTPUT  "5,515,2,4,9,515"
+
+ 10 => REVERSE
+  let arr = [5,515,2,4,9,515]
+console.log(arr.reverse()) OUTPUT [515, 9, 4, 2, 515, 5]
+
+11 => CONCAT
+  let arr = [5,10,15,20]
+  console.log(arr.concat(25,30)) PUTPUT [5, 10, 15, 20, 25, 30]
+
+12 => ForEach == == reading each value working for given conditions
+let arr = [5,10,15,20]
+arr.forEach((item,i)=>{
+console.log(item,i)
+})
+Output
+5, 0
+10, 1
+15, 2
+20, 3
+
+13 ==> EVERY  - check given condition for every item weather once false it will return false
+let arr = [5,10,15,20]
+const ever= arr.every((item,i)=>{
+ return item>90
+})
+console.log(ever)
+
+ 14 ===>>> SOME- > If once element satisfied it will return true
+  let arr = [5,10,15,20]
+  const some= arr.some((item,i)=>{
+   return item>15
+// 20 is greater so it will be return
+ })
+console.log(some)
+
+15=> filter will return new array and return with specific filter
+Var filer=fiar.filter((value)=>{
+Return value>10
+})
+console.log(filer) output 15,20
+
+16=> copyWithin -> this work with array
+const fruits = ["A", "B", "C", "D", "E", "F"];
+console.log(fruits.copyWithin(2,0,5)) ["A", "B", "A", "B", "C", "D"]
+
+
+17: Slice=> take 2 arguments for break the given array by index
+Var sl=[10,20,30,40]
+console.log(sl.slice(1,3)) OUTPUT  [20,30]
+
+
+18 => map function use to perform the operation  by given array and return for each and every elements
+
+For understand map we should use loop first
+
+Var m =[1,2,3]
+Let area=[]
+Let are
+for(let I=0;i<m.length;i++){
+are = m[I]*5
+Area,push(are)
+}
+console.log(area)
+
+Now sane work by map
+Var mapa = [1,2,3,4,5]
+Var mm=mapa.map((value)=>{
+Return value*5
+}}
+log(mm) 
+NOTE—map is return a array after calculation and foreach does not return array
+
+
+
+19 => 
+
+
+Rest operator is different and spread operator is different
+
+The spread operator allows us to spread the value of an array (or any iterable) across zero or more arguments in a function or elements in an array (or any iterable). The rest parameter allows us to pass an indefinite number of parameters to a function and access them in an array.
+
+
+spreads = फैलता
+
+Rest operator is use to get remaining arguments, when we did not know how much arguments will be getting from the function. 
+
+The rest operator (…) allows us to call a function with any number of arguments and then access those excess arguments as an array
+
+
+
+Please do link : https://www.youtube.com/watch?v=ngimOC0V_Q8
+Example 1 : 
+
+Here we can merge 2 arrays using spread operator.
+
+const arr1=[0,0,0,0]
+const arr2= [1,1,1,1]
+var arr3 = [...arr1,...arr2]
+console.log(arr3)
+
+
+Example : 2
+
+when we don't know that how many parameters will be get in the function, in this situation we can also use spread operator(…).
+
+ 
+const addNumber=(a,b,c,...addingNumber)=>{
+   // this consider right side number with rest operator
+    console.log(a,b,c) OUTPUT 2,3,5
+    console.log(addingNumber) OUTPUT [6,7]
+}
+addNumber(2,3,5,6,7)
+
+20=> Spread operator just reverse of Rest operator this operator convert array into piece of array
+Like  
+const addNumber=(arra)=>{
+console.log(...arra)
+}
+addNumber([2,3,5,6,7]) OUTPUT 2, 3, 5, 6, 7
+
+2ND EXAMPLE
+
+const spr=(n1,n2,n3)=>{
+console.log(n1,n2,n3)
+}
+var names =['A','B','C']
+spr(names[0],names[1],names[2]) // Difficult
+spr(...names) //sort trick with spread
+
+“ C L O S U R E ”
+21 : >>>>> Closure is which methods value will not lost ,we can use methods as a example
+// Closure -> 
+
+var sum=function(a){
+console.log(“resul ",a)
+var c=4
+return function(b){
+console.log(b)
+return a+b+c
+}
+}
+So firstly sum method will be call and a and c value will not lost and a+b+c will be count
+var store = sum(2) we are storing sum and store for annonimus function
+console.log(store(0))
+Eik bar function call ho Jaye to values lost nahi hoti its called Closure
+Retain rahti hai.
+
+
+And variable called Lexical scope
+
+
+
+
+var sum=function(a,b,c){
+return {
+getSumTwo:function(){
+return a+b
+},
+getSumThree:function(){
+return a+b+c
+}
+}
+}
+var store = sum(3,1,2)
+console.log(store.getSumTwo())
+console.log(store.getSumThree())
+
+
+
+WHAT IS POLIFILL , BABEL
+
+
+
+22=== Get array length without function
+
+let arr =[2,5,14,2,2,]
+
+let len=0
+while(arr[len]!==undefined)
+{
+ len++
+}
+console.log(len)
+
+
+23 ===
+Swipe two number
+
+let a=10
+let b=20
+a=a+b
+b=a-b;
+a=a-b
+console.log("b is ",b,"a is ",a)
+
+24 : === this operator check data type and value too, once both conditions are true than it will back true
+Otherwise it will return false.
+
+25 ==> sorting
+let age =[21011,54,41,0,5]
+
+let sorting = age.sort((n1,n2)=>{
+    return n1<n2?-1:1
+  })
+  console.log(sorting)// assending order
+
+26=> reduce mathod
+
+
+27=> Set-> it contains unique value only
+If we pass a array to Set than it will return a filtered array
+Example
+Let arr=[1,2,3,3,3,4]
+Let obj = new Set(arr) Remove dup  OUTPUR 1,2,3,4
+obj.add(3)
+Obj.delete(3)
+Obj.has(3) for check is there availability
+
+We can. Use forEach methods in set
+
+
+28 : Map // store data in key value formate this is hold original key and replace value from the key
+const map1 = new Map();
+
+map1.set('a', 1);
+map1.set('b', 2);
+map1.set('c', 3);
+
+console.log(map1.get('a'));
+// expected output: 1
+
+map1.set('a', 97);
+
+console.log(map1.get('a'));
+// expected output: 97
+
+console.log(map1.size);
+// expected output: 3
+
+map1.delete('b');
+
+console.log(map1.size);
+// expected output: 2
+
+
+29:  WeakSet() it cannot iterate only store object its not have loops or foreach methods
+Let ws= new WeakSet()
+Var ob1={“name”:”Tiger”}
+Var ob2={}
+ws.add(ob2)
+Ws.delete(ob1)
+
+30 : flatMap()
+31 : fill()
+32 : flat()
+
+33 : promise(
+34 : async
+
+35 : templete string 
+UseMemo
+useState,
+useReducer,
+useSelector,
+useCallback,
+useContext,
+
+
+1). What is hoisting in JS?
+2). How it works?
+3). Does hoisting work with all the variables, and Why?
+4). Diff. b/w "let" and "var"?
+5). What is Event Loop?
+6). What is the precedence in Event Loop? ( between Promise() and setTimeout() )
+7). What is the Diff. b/ "setTimeout()" & "setInterval()"?
+8). What are the ES6 features you have used?
+9). Where do you mostly use Rest Operator?
+
+How can we archive lifecycle in Hooks.
+
+componentDidMount =useEffect(()=>{},[])
+componentDidUpdate = useEffect(()=>{},[ user ]) // if user update then did update will call.. as useEffect
+componentunMount = useEffect(()=>{ return()=> {},[]}
+
+What do you understand by pure component
+
+`;

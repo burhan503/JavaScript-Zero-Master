@@ -1,0 +1,2 @@
+Q : what is CDD ?
+A : Component-Driven Development (CDD) is a development methodology that support the build process around components. It is a process that builds UIs from the “bottom up” by starting at the level of components and ending at the level of pages or screens.

@@ -1,0 +1,5 @@
+Q : What is the way to get the status of a CheckBox?
+A : The status can be acquired as follows –
+
+ alert(document.getElementById('checkbox1').checked); 
+If the CheckBox is checked, this alert will return TRUE.

@@ -1,0 +1,9 @@
+Q : What is called Variable typing in Javascript ? 
+A : Variable typing is used to assign a number to a variable. 
+The same variable can be assigned to a string.
+
+Example:
+
+i = 10;
+i = "string;"
+This is called variable typing. 

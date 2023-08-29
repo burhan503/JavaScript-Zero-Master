@@ -1,0 +1,10 @@
+Q :  What is for-in loop in Javascript?
+A : The for-in loop is used to loop through the properties of an object.
+
+The syntax for the for-in loop is –
+
+for (variable name in object){
+    statement or block to execute
+}
+In each repetition, one property from the object is associated with the variable name.
+ The loop is continued till all the properties of the object are depleted.

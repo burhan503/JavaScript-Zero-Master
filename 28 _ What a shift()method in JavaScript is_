@@ -1,0 +1,10 @@
+`
+Q : 28 : What a shift()method in JavaScript is?
+A : The shift mathod is a javascript inbuilt mathod which is work for removing first element from the given array.
+
+Example:
+
+var names = ["A", "B", "C"];
+names.shift();
+//Now names becomes B,C
+`;

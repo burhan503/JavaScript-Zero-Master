@@ -1,0 +1,16 @@
+Q : What is a prompt box in JavaScript ?
+Answer :
+A prompt box is a box that allows the user to enter input by providing a text box.
+A label and box will be provided to enter the text or number.
+
+A prompt box is often used if you want the user to input a value before entering a page.
+
+When a prompt box pops up, the user will have to click either "OK" or "Cancel" to proceed after entering an input value.
+
+If the user clicks "OK" the box returns the input value. If the user clicks "Cancel" the box returns null.
+
+A prompt box is often used if you want the user to input a value before entering a page.
+
+When a prompt box pops up, the user will have to click either "OK" or "Cancel" to proceed after entering an input value.
+
+If the user clicks "OK" the box returns the input value. If the user clicks "Cancel" the box returns null.

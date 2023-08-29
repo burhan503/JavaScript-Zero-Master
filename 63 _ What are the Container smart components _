@@ -1,0 +1,18 @@
+Q : What are the container smart components ?
+A : Container components are those a react component that have access to the store,
+these component make api calling, make some proccesing and contain the app business login
+container component should not have view or presentation logic, they have only business logic,
+and api proccesing.
+
+    They are class-based components and have their own state defined in their constructor() functions.
+
+class App extends Component {
+constructor(props){
+super(props);
+this.state = {pictures : []};
+}
+}
+
+These components also often contain other callback functions that are used to update the state and get passed down to their child components as props.
+
+The root component off an app is a good example of a smart component. It is often responsible for maintaining several pieces of state for the entire app and needs to pass down additional functions to its child components so that the state can be updated when a user interacts with the site.

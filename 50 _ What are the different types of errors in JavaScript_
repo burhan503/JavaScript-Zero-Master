@@ -1,0 +1,6 @@
+Q : What are the different types of errors in JavaScript?
+A : There are three types of errors:
+
+Load time errors: Errors that come up when loading a web page, like improper syntax errors, are known as Load time errors and generate the errors dynamically.
+Runtime errors: Errors that come due to misuse of the command inside the HTML language.
+Logical errors: These are the errors that occur due to the bad logic performed on a function with a different operation.

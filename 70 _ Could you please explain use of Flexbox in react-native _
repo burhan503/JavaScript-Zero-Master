@@ -1,0 +1,10 @@
+Q : Could you please explain use of Flexbox in react-native ?
+A : The Flexbox is design to provide a consistance layout on diffrent screen size.
+
+The flexBox is same as web but few exaptations as comparision the web.
+
+1 The default direction is row in the web/ column
+
+2 align-content default is stretch/flex-start
+
+we normally use flex-direction, align-items,and justify-content for archive right layout.

@@ -1,0 +1,11 @@
+`
+Q: What is === operator ?
+A : === is called a strict equality operator, 
+which returns true when the two operands have the same value without conversion.
+
+console.log(32==="32") false
+console.log(32===32) true
+
+
+
+`;

@@ -1,0 +1,4 @@
+Q : How you can submit a form using JavaScript ?
+A : To submit a form using JavaScript use
+
+document.form[0].submit();

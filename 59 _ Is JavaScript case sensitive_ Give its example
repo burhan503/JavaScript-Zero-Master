@@ -1,0 +1,3 @@
+Q : Is JavaScript case sensitive? Give its example ? 
+A : Yes, JavaScript is case-sensitive. For example, a function parseInt is not the same as the function Parseint.
+

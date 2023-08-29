@@ -1,0 +1,29 @@
+Q : what is DOM in javascript ?
+
+A The Document Object Model (DOM) is an application programming interface (API) for manipulation HTML and XML documents.
+(Add,remove,and modify parts of the documents/HTML)
+
+It is a structured representation of HTML in the webpage or application. It represents the entire UI(User Interface) of the web application as the tree data structure.
+
+IN Simple words It is a structural representation of HTML elements of a web applications.
+
+    DOM tree halp us to change html by help of javascript.
+
+dom is use to change the html and jsx tags values.
+
+The Problem is when used Real DOM..
+
+As an example, let’s say that you have a list that contains ten items. You check off the first item. Most JavaScript frameworks would rebuild the entire list. That’s ten times more work than necessary! Only one item changed, but the remaining nine get rebuilt exactly how they were before.
+
+Rebuilding a list is no big deal to a web browser, but modern websites can use huge amounts of DOM manipulation. Inefficient updating has become a serious problem.
+
+To address this problem, the people at React popularized something called the virtual DOM.
+
+React does not update the real DOM directly but it updates the Virtual DOM. DOM stands for Document Object Model.DOM defines the logical structure of documents and this is the way a document is accessed and manipulated.
+
+Whenever setState() method is called, ReactJS creates the whole Virtual DOM from scratch. Creating a whole tree is very fast so it does not affect the performance. At any given time, ReactJS maintains two virtual DOM, one with the updated state Virtual DOM and other with the previous state Virtual DOM.
+
+ReactJS using diff algorithm compares both the Virtual DOM to find the minimum number of steps to update the Real DOM.
+
+follow link : https://medium.com/@happymishra66/virtual-dom-in-reactjs-43a3fdb1d130
+https://www.javatpoint.com/what-is-dom-in-react#:~:text=Real%2FBrowser%20DOM%3A&text=It%20is%20a%20structured%20representation,web%20application%20in%20simple%20words.
